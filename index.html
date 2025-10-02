@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Student Grade Calculator</h1>
+
+    <div class="grid">
+      <!-- Calculator -->
+  <form id="studentForm" class="card">
+  <label>Student Name:
+    <input type="text" id="studentName" required>
+  </label>
+  <label>Assignment 1:
+    <input type="number" id="assignment1" min="0" max="100" placeholder="Enter score (0-100)" required>
+  </label>
+  <label>Assignment 2:
+    <input type="number" id="assignment2" min="0" max="100" placeholder="Enter score (0-100)" required>
+  </label>
+  <label>Final Exam:
+    <input type="number" id="finalExam" min="0" max="100" placeholder="Enter score (0-100)" required>
+  </label>
+  <button type="button" onclick="calculateGrade()">Add Student</button>
+</form>
+
+
+      <!-- Results -->
+      <div class="results-card">
+        <h2>Results</h2>
+        <div id="results"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
