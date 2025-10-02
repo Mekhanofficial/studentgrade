@@ -1,4 +1,3 @@
-/* Import modern font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
@@ -129,9 +128,15 @@ button:hover {
 }
 
 /* Status Styles */
-.pass { border-left: 6px solid #4caf50; }
-.fail { border-left: 6px solid #f44336; }
-.excellent { border-left: 6px solid #ffd700; }
+.pass { 
+ border-left: 6px solid #4caf50;
+ }
+.fail { 
+ border-left: 6px solid #f44336;
+ }
+.excellent { 
+ border-left: 6px solid #ffd700;
+ }
 
 /* Animations */
 @keyframes fadeInUp {
