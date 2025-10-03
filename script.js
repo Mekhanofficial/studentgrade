@@ -28,7 +28,7 @@ function calculateGrade() {
 
   const hasPassed = finalGrade >= 70;
   const passStatus = hasPassed ? "Passed" : "Failed"; // ternary operator
-  const isExcellent = hasPassed && finalExam > 90;
+  const isExcellent = hasPassed && finalExam >= 90;
 
   const resultsDiv = document.getElementById("results");
 
