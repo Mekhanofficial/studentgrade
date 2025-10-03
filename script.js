@@ -7,7 +7,7 @@ function calculateGrade() {
   if (assignment1 < 0 || assignment2 < 0 || finalExam < 0) {
     document.getElementById("results").innerHTML += `
       <p class="fail">
-        <b>Name:</b> ${studentName}<br>
+        <b>Name:</b> ${studentName}<br>                      
         <b>Status:</b> Not valid  (Scores cannot be below 0)
       </p>
     `;
@@ -15,7 +15,7 @@ function calculateGrade() {
   }
 
   const assignmentAverage = (assignment1 + assignment2) / 2;
-  const finalGrade = (assignmentAverage * 0.4) + (finalExam * 0.6);
+  const finalGrade = (assignmentAverage) + (finalExam * 0.6);
 
   const hasPassed = finalGrade >= 70;
   const passStatus = hasPassed ? "Passed" : "Failed"; // ternary operator
