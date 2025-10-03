@@ -13,6 +13,15 @@ function calculateGrade() {
     `;
     return; // stops all calc if invalid
   }
+  if (assignment1 > 40 || assignment2 > 40 || finalExam > 100) {
+    document.getElementById("results").innerHTML += `
+      <p class="fail">
+        <b>Name:</b> ${studentName}<br>                      
+        <b>Status:</b> Not valid  (Enter valid score)
+      </p>
+    `;
+    return; // stops all calc if invalid
+  }
 
   const assignmentAverage = (assignment1 + assignment2) / 2;
   const finalGrade = (assignmentAverage) + (finalExam * 0.6);
